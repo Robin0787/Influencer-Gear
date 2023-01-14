@@ -1,0 +1,252 @@
+/* Google Fonts Link */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Common Styles or Utilities Starts Here */
+
+/* Utility */
+.container {
+  max-width: 85%;
+  margin-inline: auto;
+}
+
+.title {
+  font-weight: 700;
+
+  color: #3a3a3a;
+}
+.desc {
+  font-weight: 600;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+.primary-btn {
+  color: #ffffff;
+  background: #e02c6d;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 41px;
+}
+
+/* Common Styles or Utilities Ends Above */
+
+/* Header Sections Styles Starts Here*/
+
+/* Navbar Styles Starts Here */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 120px;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.navbar .title {
+  font-size: 26px;
+}
+
+.navbar .list {
+  display: flex;
+}
+.navbar .list .item {
+  list-style: none;
+  margin-right: 34px;
+}
+.list .item a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s ease;
+}
+.list .item a:hover {
+  color: rgb(23, 77, 255);
+}
+
+.item a > .fa-solid {
+  font-size: 28px;
+}
+
+/* Hover Effect For items */
+
+/* Navbar Styles Ends Above*/
+
+.banner {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.banner-img img {
+  width: 440px;
+  height: 414px;
+  background-image: url("./images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  padding: 20px;
+}
+.banner > article {
+  width: 50%;
+}
+
+.banner .title {
+  font-size: 48px;
+}
+
+.banner .desc {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 80%;
+}
+.banner .primary-btn .fa-solid {
+  margin-left: 5px;
+}
+
+/* Header Sections Styles Ends Above*/
+
+/* Sponsor Sections Styles Starts Here*/
+
+main .container.sponsor {
+  width: 80%;
+}
+
+.sponsor-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 69px 0 100px 0;
+  padding: 20px;
+  box-shadow: 0 0 2px gray;
+}
+/* Sponsor Sections Styles Ends Above */
+
+/* Popular Collection Section Starts Here */
+
+.container.popular-collection {
+  width: 80%;
+  margin-bottom: 100px;
+}
+.popular-collection .collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.popular-collection > .title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+.popular-collection .item {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 17px 14px;
+}
+.popular-collection .item .thumbnail img {
+  width: 100%;
+}
+.collections .details .title {
+  font-weight: 500;
+  font-size: 28px;
+  color: #18191f;
+}
+.collections .details .price {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.details .ratings span {
+  color: #5e6366;
+  margin-left: 5px;
+}
+.details .ratings .fa-solid,
+.fa-regular {
+  color: #fb8200;
+}
+
+.item .details .desc {
+  color: #787885;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Popular Collection Section Ends Above */
+
+/* For Medium Device */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Banner Section */
+  .banner {
+    flex-direction: column-reverse;
+    gap: 30px;
+    text-align: center;
+  }
+  .banner > article {
+    width: 100%;
+  }
+  .banner-img img {
+    padding: 30px;
+    width: 400px;
+    height: 380px;
+  }
+  .banner .desc {
+    width: 70%;
+    text-align: center;
+    margin-inline: auto;
+  }
+  /* Sponsor Section */
+  .sponsor-section {
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+  }
+  /* Popular Collection Section */
+  .popular-collection .collections {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 576px) {
+  .container {
+    max-width: 100%;
+    margin-inline: auto;
+  }
+  .banner {
+    text-align: center;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+  .banner > article {
+    width: 100%;
+  }
+  .banner-img img {
+    padding: 40px;
+    width: 202px;
+    height: 190px;
+  }
+  .banner .title {
+    font-size: 36px;
+  }
+  .banner .desc {
+    width: 70%;
+    margin-inline: auto;
+  }
+  /* Sponsor Section */
+  .sponsor-section {
+    padding: 10px;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+  }
+
+  /* Popular Collection Section */
+  .popular-collection .collections {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
